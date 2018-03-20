@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+ <head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия &laquo;Nerds&raquo;</title>
+ </head>
+ <body>
+  <header class="main-header">
+   <nav class="main-navigation">
+    <a class="main-header-logo">
+     <img src="img/index-logo.svg" width="80" height="24" alt="Логотип Нёрд'с">
+    </a>
+    <ul class="site-navigation">
+     <li class="site-navigation-current"><p>Студия</p></li>
+     <li><a href="#">Клиенты</a></li>
+     <li><a href="#">Магазин</a></li>
+     <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul class="user-navigation">
+     <li><a class="cart" href="#">Корзина</a></li>
+    </ul>
+   </nav>
+  </header>
+  <main class="container">
+   <section>
+    <div class="slider">
+     <input type="radio" id="btn-1" name="toggle" checked>
+     <input type="radio" id="btn-2" name="toggle">
+     <input type="radio" id="btn-3" name="toggle">
+     <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+     </div>
+     <div class="slider-inner">
+      <div class="slider-slides">
+       <div class="slide-1">
+        <p>Долго, дорого, скурпулёзно.</p>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+        <a class="button button-red" href="#">Узнать больше</a>
+        <img src="img/index-slide-1.jpg" width="100" height="100" alt="slide-1">
+       </div>
+       <div class="slide-2">
+        <p>Любим математику как никто другой</p>
+        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        <a class="button button-red" href="#">Узнать больше</a>
+        <img src="img/index-slide-2.jpg" width="100" height="100" alt="slide-2">
+       </div>
+       <div class="slide-3">
+        <p>Только ночь, только хардкор</p>
+        <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+        <a class="button button-red" href="#">Узнать больше</a>
+        <img src="img/index-slide-3.jpg" width="100" height="100" alt="slide-3">
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="features">
+    <ul class="features-list">
+     <li class="features-item">
+      <h3>веб-сайты</h3>
+      <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+      <a class="button button-red" href="#">Заказать</a>
+     </li>
+     <li class="features-item">
+      <h3>Приложения</h3>
+      <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+      <a class="button button-green" href="#">Заказать</a>
+     </li>
+     <li class="features-item">
+      <h3>Презентации</h3>
+      <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+      <a class="button button-yellow" href="#">Заказать</a>
+     </li>
+    </ul>
+   </section>
+   <section>
+    <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+    <p>Выполняем заказы на разработку:</p>
+    <ul>
+     <li>Веб-сайтов любой сложности</li>
+     <li>Мобильных приложений для iOS и Android</li>
+     <li>Слайдшоу и видео для корпоративных презентаций</li>
+    </ul>
+   </section>
+   <section>
+    <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Нёрд'с">
+    <p>С 2004 года любим точность во всем:</p>
+    <ul class="font-size">
+     <li>
+      <p>146<sup>%</sup></p>
+      <p>Уровень самоотдачи</p>
+     </li>
+     <li>
+      <p>100<sup>%</sup></p>
+      <p>Соблюдение сроков</p>
+     </li>
+     <li>
+      <p>50<sup>%</sup></p>
+      <p>Минимальная предоплата</p>
+     </li>
+    </ul>
+   </section>
+   <section>
+    <ul class="our-clients">
+     <li><img src=" https://placehold.it/100x100"></li>
+     <li><img src=" https://placehold.it/100x100"></li>
+     <li><img src=" https://placehold.it/100x100"></li>
+     <li><img src=" https://placehold.it/100x100"></li>
+    </ul>
+   </section>
+  </main>
+  <footer class="main-footer">
+   <div class="footer-contacts">
+    <p>Nёrds design studio</p>
+    <address> 191186, Санкт.Петербург,<br>ул.Б.Конюшенная, д.19/8</address>
+    <p><a href="tel:+78122757575">тел.+7(812)275-75-75</a></p>
+    <a class="button button-red" href="#">Пишите нам</a>
+  </div>
+  <div class="footer-social">
+   <ul>
+    <li><a class="social-button" href="#">Вконтакте</a></li>
+    <li><a class="social-button" href="#">Фейсбук</a></li>
+    <li><a class="social-button" href="#">Инстаграм</a></li>
+   </ul>
+    <p>Давайте дружить, это выгодно!</p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+   </div>
+  </footer>
+ </body>
 </html>
